@@ -10,10 +10,11 @@ body{
 
 div.contenu{
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px;
+    margin: 40px 8% 40px 8%;
+    padding: 0px 8px 20px 8px;
     min-width: 350px;
-    overflow: visible;
+    overflow: visible; 
+    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.2);
 }
 
 h1{
@@ -69,20 +70,20 @@ div.sepateur{
     position: absolute;
     bottom: 0px;
     width: 100%;
-     background-color: #6C829DC0; /* #6C829D pour la couleur, C0 pour la transparence*/
-    height: 80px;
+    background-color: #6C829DC0; /* #6C829D pour la couleur, C0 pour la transparence*/
+    height: 50px;
     color: white;
 }
 
 .tableau td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 .tableau th{
     vertical-align: bottom;
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 8px;
 }
 
@@ -95,7 +96,7 @@ img.info{
 }
 
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -109,11 +110,6 @@ div.colonne h2{
 
 div.colonne1{
     display: inline-block;
-    margin-right: 10%;
-}
-
-div.colonne2{
-    float: right;
 }
 
 div.ingredient p{
@@ -157,6 +153,45 @@ table.preparation tr{
     height: 40px;
 }
 
-div.contenu{
-    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.2);
+/* Styles pour ordinateurs*/
+@media only screen and (min-width: 768px){
+    div.contenu{
+        /* margin: 60px 10% 80px 10%; */
+        /* padding: 0px 8px 20px 8px; */
+        min-width: 350px;
+    }
+
+    .tableau{
+        height: 80px;
+    }
+    
+    .tableau td{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .tableau th{
+        font-size: 16px;
+    }
+
+    div.colonne{
+        width: 45%;
+        margin-top: 20px;
+    }
+    
+    div.colonne1{
+        margin-right: 10%;
+    }
+    
+    div.colonne2{
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
 }
